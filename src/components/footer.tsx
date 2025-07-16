@@ -4,7 +4,7 @@ import {FaLinkedin, FaGithub} from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className='flex gap-3 p-4 justify-center'>
+    <footer className='flex gap-[24px] p-4 justify-center '>
         <a
         href="https://www.linkedin.com/in/baohuytrinh/"
         target="_blank"
