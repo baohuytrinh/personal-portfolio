@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import {FaLinkedin, FaGithub} from 'react-icons/fa';
 
 
 export default function Home() {
@@ -16,23 +17,40 @@ export default function Home() {
           <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start py-2 text-size-30">
             software engineer
           </main>
+          <div className='flex my-3'>
+            <a
+              href="https://www.linkedin.com/in/baohuytrinh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={28} className='hover:text-blue-500 transition-colors' />
+            </a>
+            <a
+              href="https://github.com/baohuytrinh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={28} className="hover:text-gray-400 transition-colors" />
+            </a>
+          </div>
         </div>
-        <div className="mt-16 border border-blue-400">
+        <div className="mt-16 border border-blue-400 rounded">
           <Image
             src='/sample_pfp.jpg'
             alt='my pfp'
             width={200}
             height={200}
             className=''
-          />
-
-             
+          />   
         </div>
       </div>
+      <div>
+      hihihi
+      </div>
 
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+      {/* <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         
-      </footer>
+      </footer> */}
     </div>
   );
 }
