@@ -20,7 +20,7 @@ function NavBar() {
 
   return (
     <nav 
-      className='flex gap-6 p-4 justify-center bg-gray-900 text-blue sticky top-0 w-200 mx-auto border border-black rounded-3xl transition-colors duration-300'
+      className='flex gap-6 p-4 justify-center bg-gray-900 text-blue sticky top-0 w-200 mx-auto rounded-b-3xl transition-colors duration-300'
       style={{
         backgroundColor: `rgba(17, 24, 39, ${bgOpacity})`,
         backdropFilter: 'blur(4px)',
