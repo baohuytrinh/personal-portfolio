@@ -1,13 +1,16 @@
 import Image from 'next/image';
 import {FaLinkedin, FaGithub} from 'react-icons/fa';
+import { featuredProjects } from '@/data/featuredProjects';
+import ProjectCard from '@/components/ProjectCard';
 
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <>
+    <div className="font-sans grid items-center justify-items-center gap-16 pb-12 border border-blue-200">
 
-      <div className="mt-32 flex w-180 justify-between">
-        <div className="mt-16 border border-red-400">
+      <div className="flex w-180 justify-between">
+        <div className="mt-16 border">
           <header className='font-sans text-6xl mt-16 py-2'>
             hi, i'm bao-huy 
           </header>
@@ -34,7 +37,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="mt-16 border border-blue-400 rounded">
+        <div className="mt-16 border rounded">
           <Image
             src='/sample_pfp.jpg'
             alt='my pfp'
@@ -44,13 +47,18 @@ export default function Home() {
           />   
         </div>
       </div>
-      <div>
-      hihihi
-      </div>
-
-      {/* <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        
-      </footer> */}
     </div>
+    
+    <div className='w-full border border-blue-200'>
+      <h1 className='flex max-w-180 mx-auto text-[40px] pt-4 pb-4 '>
+        featured projects
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-180 mx-auto">
+        {featuredProjects.map((project, idx) => (
+          <ProjectCard key={idx} project={project} />
+        ))}
+      </div>
+    </div>
+    </>
   );
 }
