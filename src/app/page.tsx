@@ -10,7 +10,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
-    <div className="font-sans grid items-center justify-items-center gap-16 pb-12 border border-blue-200">
+    <div className="font-sans grid items-center justify-items-center gap-16 pb-12">
 
       <div className="flex w-180 justify-between">
         <div className="mt-16 ">
@@ -52,22 +52,25 @@ export default function Home() {
       </div>
     </div>
     
-    <div className='w-full border border-blue-200'>
-      <h1 className='flex max-w-180 mx-auto text-[25px] pt-4 pb-4 '>
-        recent projects
-      </h1>
+    <div className='w-full border-blue-200'>
+      <div className='flex max-w-180 mx-auto justify-between'>
+        <h1 className=' flex max-w-180 text-[25px] py-2 '>
+          recent projects
+        </h1>
+        <div className='max-w-180 flex '>
+          <Link href={"/Projects"} className='flex items-center '>
+            view all projects 
+            <FaArrowRightToBracket className='ml-2'/>
+          </Link>
+        </div>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-180 mx-auto">
         {featuredProjects.map((project, idx) => (
           <ProjectCard key={idx} project={project} />
         ))}
       </div>
 
-      <div className='max-w-180 flex mx-auto pt-1 pb-2'>
-        <Link href={"/Projects"} className='flex items-center mx-3 '>
-          view all projects 
-          <FaArrowRightToBracket className='ml-2'/>
-        </Link>
-      </div>
+      
     </div>
     </>
   );
