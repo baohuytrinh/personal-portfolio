@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import {FaLinkedin, FaGithub} from 'react-icons/fa';
+import { FaArrowRightToBracket } from "react-icons/fa6";
+
 import { featuredProjects } from '@/data/featuredProjects';
 import ProjectCard from '@/components/ProjectCard';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -10,12 +13,12 @@ export default function Home() {
     <div className="font-sans grid items-center justify-items-center gap-16 pb-12 border border-blue-200">
 
       <div className="flex w-180 justify-between">
-        <div className="mt-16 border">
-          <header className='font-sans text-6xl mt-16 py-2'>
-            hi, i'm bao-huy 
+        <div className="mt-16 ">
+          <header className='font-sans text-4xl mt-16 py-2 flex'>
+            Hi, I'm Bao-Huy <p className='text-xs flex justify-center items-center pl-3'>{"(bow💥 - hwee)"}</p>
           </header>
-          <h1 className='font-sans text-xl top-1 mx-auto flex justify-start py-2'>
-            welcome to my portfolio
+          <h1 className='font-sans text-l top-1 mx-auto flex justify-start py-2 max-w-100'>
+            3rd year student at UMass Amherst pursuing a Bachelor's of Science in Computer Science, minoring in Mathematics
           </h1>
           <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start py-2 text-size-30">
             software engineer
@@ -37,9 +40,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="mt-16 border rounded">
+        <div className="mt-25 rounded items-center justify-center flex">
           <Image
-            src='/sample_pfp.jpg'
+            src='/pfp.jpg'
             alt='my pfp'
             width={200}
             height={200}
@@ -50,13 +53,20 @@ export default function Home() {
     </div>
     
     <div className='w-full border border-blue-200'>
-      <h1 className='flex max-w-180 mx-auto text-[40px] pt-4 pb-4 '>
-        featured projects
+      <h1 className='flex max-w-180 mx-auto text-[25px] pt-4 pb-4 '>
+        recent projects
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-180 mx-auto">
         {featuredProjects.map((project, idx) => (
           <ProjectCard key={idx} project={project} />
         ))}
+      </div>
+
+      <div className='max-w-180 flex mx-auto pt-1 pb-2'>
+        <Link href={"/Projects"} className='flex items-center mx-3 '>
+          view all projects 
+          <FaArrowRightToBracket className='ml-2'/>
+        </Link>
       </div>
     </div>
     </>
