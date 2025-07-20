@@ -5,13 +5,15 @@ import { FaArrowRightToBracket } from "react-icons/fa6";
 import { featuredProjects } from '@/data/featuredProjects';
 import ProjectCard from '@/components/ProjectCard';
 import Link from 'next/link';
+import SkillsSection from '@/components/skillsSection';
 
 
 export default function Home() {
   return (
     <div className='w-full items-center'>
-      <div className="max-w-180 mx-auto font-sans grid items-center justify-items-center gap-16 pb-12">
 
+      {/* top portion (header, desc, pfp) */}
+      <div className="max-w-180 mx-auto font-sans grid items-center justify-items-center gap-16 pb-12">
         <div className="mx-auto p-4 flex flex-col md:flex-row w-full justify-between items-center md:items-start">
 
           <div className="order-1 md:order-2 mt-8 md:mt-10 items-center justify-center flex flex-shrink-0">
@@ -58,6 +60,11 @@ export default function Home() {
         </div>
       </div>
       
+      {/* skills */}
+      <SkillsSection/>
+
+
+      {/* projects */}
       <div className='w-full justify-center'>
         <div className='flex max-w-180 mx-auto justify-between'>
           <h1 className=' flex max-w-180 text-[25px] py-2 '>
