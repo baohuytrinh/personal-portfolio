@@ -5,8 +5,8 @@ export const projects = [
       image: "/sample_project.png", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "OpenAI API"],
       links: [
-        { label: "Source", url: "#" },
-        { label: "Website", url: "#" }
+        { label: "Source", url: "#", iconType: 'github'},
+        { label: "Website", url: "#", iconType: 'website'}
       ]
     },
 
@@ -16,8 +16,8 @@ export const projects = [
       image: "/sample_project.png", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "WebSockets"],
       links: [
-        { label: "Source", url: "#" },
-        { label: "Website", url: "#" }
+        { label: "Source", url: "#", iconType: 'github'},
+        { label: "Website", url: "#", iconType: 'websitev'}
       ]
     },
 
@@ -27,8 +27,8 @@ export const projects = [
       image: "/sample_project.png", 
       tags: ["TypeScript", "React", "Next.js", "TailwindCSS"],
       links: [
-        { label: "Source", url: "#" },
-        { label: "Website", url: "#" }
+        { label: "Source", url: "#", iconType: 'github'},
+        { label: "Website", url: "#", iconType: 'website'}
       ]
     },
 
@@ -38,8 +38,8 @@ export const projects = [
         image: "/sample_project.png", 
         tags: ["HTML", "CSS", "JavaScript", "MongoDB", "Node.js", "Express.js"],
         links: [
-          { label: "Source", url: "#" },
-          { label: "Website", url: "#" }
+          { label: "Source", url: "#", iconType: 'github'},
+          { label: "Website", url: "#", iconType: 'website'}
         ]
       },
     

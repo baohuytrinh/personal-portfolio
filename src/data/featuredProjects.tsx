@@ -1,12 +1,12 @@
 export const featuredProjects = [
     {
       title: "AI-Powered Workout Tracker",
-      description: "Full-stack app that allows you to track your working sets, reps, and weight, adding them to your plans and calendar, and allowing the AI fitness assistant to assist you based off of ",
+      description: "Full-stack app to log sets/reps/weight, plan workouts on a calendar, and get AI-guided suggestions from your history. ",
       image: "/sample_project.png", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "OpenAI API"],
       links: [
-        { label: "Source", url: "#" },
-        { label: "Website", url: "#" }
+        { label: "Source", url: "#", iconType: 'github' },
+        { label: "Website", url: "#", iconType: 'website'}
       ]
     },
 
@@ -16,8 +16,8 @@ export const featuredProjects = [
       image: "/sample_project.png", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "WebSockets"],
       links: [
-        { label: "Source", url: "#" },
-        { label: "Website", url: "#" }
+        { label: "Source", url: "#", iconType: 'github' },
+        { label: "Website", url: "#", iconType: 'website' }
       ]
     },
 ];
