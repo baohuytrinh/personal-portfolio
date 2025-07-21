@@ -7,11 +7,11 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = ({ icon, name}) => {
     return (
-        <div className="border-blue-400 border m-3">
-            <div className="">
+        <div className="bg-transparent  rounded-lg w-full border-gray-700 border py-0.5">
+            <div className="text-4xl flex justify-center">
                 {icon}
             </div>
-            <span className="border flex justify-center">
+            <span className="text-xs flex justify-center">
                 {name}
             </span>
         </div>
