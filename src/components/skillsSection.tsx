@@ -13,8 +13,6 @@ import {
     RiNodejsFill,
     RiNextjsFill,
     RiTailwindCssFill,
-
-
 } from 'react-icons/ri';
 
 import { BiLogoTypescript, 
@@ -22,26 +20,30 @@ import { BiLogoTypescript,
         BiLogoPython,
         BiLogoMongodb,
         BiLogoDocker,
-
-
 } from "react-icons/bi";
 
+type ColorKey = 'yellow' | 'blue' | 'orange' | 'green' | 'cyan' | 'red' | 'teal' | 'slate' | 'java' | 'python' | 'white';
 
+interface Skill {
+    name: string;
+    icon: React.ReactNode;
+    color: ColorKey;
+}
 
 const SkillsSection: React.FC = () => {
-    const skills = [
-        { name: 'JavaScript', icon: <RiJavascriptFill/>},
-        { name: 'TypeScript', icon: <BiLogoTypescript/>},
-        { name: 'Java', icon: <RiJavaFill/>},
-        { name: 'Python', icon: <BiLogoPython/>},
-        { name: 'React', icon: <RiReactjsLine/>},
-        { name: 'Node.js', icon: <RiNodejsFill/>},
-        { name: 'Git', icon: <TbBrandGit/>},
-        { name: 'MongoDB', icon: <SiMongodb/>},
-        { name: 'Tailwind', icon: <RiTailwindCssFill/>},
-        { name: 'Next.js', icon: <RiNextjsFill/>},
-        { name: 'HTML', icon: <RiHtml5Fill/>},
-        { name: 'CSS', icon: <BiLogoCss3/>},
+    const skills: Skill[] = [
+        { name: 'TypeScript', icon: <BiLogoTypescript/>, color: 'blue'},
+        { name: 'React', icon: <RiReactjsLine/>, color: 'cyan'},
+        { name: 'JavaScript', icon: <RiJavascriptFill/>, color: 'yellow'},
+        { name: 'Java', icon: <RiJavaFill/>, color: 'java'},
+        { name: 'Python', icon: <BiLogoPython/>, color: 'python'},
+        { name: 'Node.js', icon: <RiNodejsFill/>, color: 'green'},
+        { name: 'MongoDB', icon: <SiMongodb/>, color: 'green'},
+        { name: 'Git', icon: <TbBrandGit/>, color: 'white'},
+        { name: 'Next.js', icon: <RiNextjsFill/>, color: 'white'},
+        { name: 'Tailwind', icon: <RiTailwindCssFill/>, color: 'teal'},
+        { name: 'HTML', icon: <RiHtml5Fill/>, color: 'orange'},
+        { name: 'CSS', icon: <BiLogoCss3/>, color: 'blue'},
     ];
 
     return (
@@ -56,6 +58,7 @@ const SkillsSection: React.FC = () => {
                             key={index}
                             icon={skill.icon}
                             name={skill.name}
+                            color={skill.color}
                         />
                     ))}
                 </div>
