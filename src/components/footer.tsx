@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import {FaLinkedin, FaGithub} from 'react-icons/fa';
+import { FiGithub, FiLinkedin} from "react-icons/fi";
 
 function Footer() {
   return (
@@ -10,14 +10,14 @@ function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         >
-            <FaLinkedin size={28} className='hover:text-blue-500 transition-colors' />
+            <FiLinkedin size={28} className='hover:text-blue-500 transition-colors' />
         </a>
         <a
         href="https://github.com/baohuytrinh"
         target="_blank"
         rel="noopener noreferrer"
         >
-            <FaGithub size={28} className="hover:text-gray-400 transition-colors" />
+            <FiGithub size={28} className="hover:text-gray-400 transition-colors" />
         </a>
     </footer>
   )

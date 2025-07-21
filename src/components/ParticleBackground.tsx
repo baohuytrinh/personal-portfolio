@@ -23,15 +23,6 @@ export default function ParticleBackground() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
-
-    
     const initParticles = () => {
       particlesRef.current = [];
       const particleCount = Math.floor((canvas.width * canvas.height) / 15000);
@@ -48,8 +39,21 @@ export default function ParticleBackground() {
         particlesRef.current.push(particle);
       }
     };
+    
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
 
-    initParticles();
+      initParticles();
+    };
+
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    
+    
+
+    
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
