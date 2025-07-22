@@ -33,7 +33,7 @@ interface Skill {
 const SkillsSection: React.FC = () => {
     const skills: Skill[] = [
         { name: 'TypeScript', icon: <BiLogoTypescript/>, color: 'blue'},
-        { name: 'React', icon: <RiReactjsLine/>, color: 'cyan'},
+        { name: 'React.js', icon: <RiReactjsLine/>, color: 'cyan'},
         { name: 'JavaScript', icon: <RiJavascriptFill/>, color: 'yellow'},
         { name: 'Java', icon: <RiJavaFill/>, color: 'java'},
         { name: 'Python', icon: <BiLogoPython/>, color: 'python'},
@@ -41,13 +41,13 @@ const SkillsSection: React.FC = () => {
         { name: 'MongoDB', icon: <SiMongodb/>, color: 'green'},
         { name: 'Git', icon: <TbBrandGit/>, color: 'white'},
         { name: 'Next.js', icon: <RiNextjsFill/>, color: 'white'},
-        { name: 'Tailwind', icon: <RiTailwindCssFill/>, color: 'teal'},
-        { name: 'HTML', icon: <RiHtml5Fill/>, color: 'orange'},
+        { name: 'TailwindCSS', icon: <RiTailwindCssFill/>, color: 'teal'},
+        { name: 'HTML5', icon: <RiHtml5Fill/>, color: 'orange'},
         { name: 'CSS', icon: <BiLogoCss3/>, color: 'blue'},
     ];
 
     return (
-        <div className="w-full flex justify-center mb-4 px-10 md:px-0">
+        <div className="w-full flex justify-center mb-4 px-5 md:px-0">
             <div className="max-w-170 w-full">
                 <h2 className="font-bold flex justify-center md:justify-start max-w-180 text-[30px] pb-2">
                     skills

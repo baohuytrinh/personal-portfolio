@@ -6,7 +6,7 @@ import Link from 'next/link';
 function NavBar() {
   return (
       <nav 
-        className='font-bold border border-gray-600 flex gap-4 p-4 justify-center sticky top-5 max-w-80 w-full mx-auto rounded-4xl transition-colors duration-300 z-50 h-15'
+        className=' font-bold border border-gray-600 flex gap-4 p-4 justify-center sticky top-8 max-w-80 w-full mx-auto rounded-4xl transition-colors duration-300 z-50 h-15'
         style={{
           backgroundColor: 'transparent',
           backdropFilter: 'blur(4px)',
