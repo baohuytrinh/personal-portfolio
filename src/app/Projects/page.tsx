@@ -6,8 +6,8 @@ import { projects } from '@/data/projects';
 export default function Projects() {
 
   return (
-    <div className="min-h-screen p-4 flex grid w-180 mx-auto">
-      <h1 className="text-4xl font-bold mb-4 flex mt-10 mb-10">
+    <div className="flex grid grid-cols-1 gap-4 max-w-170 mx-auto">
+      <h1 className="text-4xl font-bold mb-4 flex mt-20 mb-10">
         my projects
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-4 max-w-180 mx-auto">

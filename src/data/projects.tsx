@@ -24,7 +24,7 @@ export const projects = [
     {
       title: "Personal Portfolio",
       description: "This is a sample project description.",
-      image: "/sample_project.png", 
+      image: "/Port2_App.jpg", 
       tags: ["TypeScript", "React", "Next.js", "TailwindCSS"],
       links: [
         { label: "Source", url: "#", iconType: 'github'},
