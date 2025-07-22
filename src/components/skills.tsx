@@ -69,14 +69,14 @@ const SkillCard: React.FC<SkillCardProps> = ({ icon, name, color}) => {
         python: {
             icon: 'group-hover:text-blue-500 group-hover:-translate-y-0.5 ',
             text: 'group-hover:text-yellow-300',
-            border: 'hover:border-white-400',
+            border: 'hover:border-white',
             shadow: 'hover:shadow-slate-200/20'
         },
         java: {
             icon: 'group-hover:text-orange-500 group-hover:-translate-y-0.5 ',
             text: 'group-hover:text-blue-400',
-            border: 'hover:border-white-400',
-            shadow: 'hover:shadow-slate-200/20'
+            border: 'hover:border-white',
+            shadow: 'hover:shadow-white-200/20'
         }
     }
 

@@ -47,8 +47,8 @@ const SkillsSection: React.FC = () => {
     ];
 
     return (
-        <div className="w-full flex justify-center px-4">
-            <div className="max-w-172 w-full">
+        <div className="w-full flex justify-center mb-4 px-10 md:px-0">
+            <div className="max-w-170 w-full">
                 <h2 className="font-bold flex justify-center md:justify-start max-w-180 text-[30px] pb-2">
                     skills
                 </h2>
