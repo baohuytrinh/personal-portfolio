@@ -32,12 +32,12 @@ interface ProjectCardProps {
   project: Project;
 };
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function FeaturedProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="bg-none border border-gray-700 rounded-xl p-4 flex flex-col gap-3 w-full h-full  justify-between">
       <div className=''>
 
-        <div className="w-full h-[330px] relative rounded overflow-hidden mb-3">
+        <div className="w-full h-[160px] relative rounded overflow-hidden mb-3">
           <Image
             src={project.image}
             alt={project.title}
