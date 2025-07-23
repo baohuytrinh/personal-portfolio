@@ -1,7 +1,7 @@
 export const featuredProjects = [
     {
       title: "AI-Powered Workout Tracker",
-      description: "Full-stack app to log sets/reps/weight, plan workouts on a calendar, and get AI-guided suggestions from your history. ",
+      description: "Log sets/reps/weight, plan workouts on calendar, and get AI-guided suggestions based on workout history. ",
       image: "/Workout_Tracker.jpg", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "OpenAI API"],
       links: [
@@ -12,7 +12,7 @@ export const featuredProjects = [
 
     {
       title: "Collaborative Whiteboard",
-      description: "This is a sample project description. This will be changed in the near future",
+      description: "Draw, write, and brainstorm together with multiple users in real-time ",
       image: "/Whiteboard_App.jpg", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "WebSockets"],
       links: [
