@@ -13,10 +13,10 @@ function NavBar() {
         }}
         >
         
-          <Link href={"/"} className='transition-all ease-in-out duration-300 hover:scale-105  hover:-translate-y-1 hover:px-1 hover:text-gray-400' >Home</Link>
-          <Link href={"/About"} className='transition-all ease-in-out duration-300 hover:-translate-y-1 hover:px-1 hover:text-gray-400' >About</Link>
-          <Link href={"/Projects"} className='transition-all ease-in-out duration-300 hover:-translate-y-1 hover:px-1 hover:text-gray-400' >Projects</Link>
-          <Link href={"/Contact"} className='transition-all ease-in-out duration-300 hover:-translate-y-1 hover:px-1 hover:text-gray-400' >Contact</Link>
+          <Link href={"/"} className='transition-all ease-in-out duration-300 hover:scale-105   hover:pb-1 hover:px-1 hover:text-gray-400' >Home</Link>
+          <Link href={"/About"} className='transition-all ease-in-out duration-300  hover:pb-1 hover:px-1 hover:text-gray-400' >About</Link>
+          <Link href={"/Projects"} className='transition-all ease-in-out duration-300  hover:pb-1 hover:px-1 hover:text-gray-400' >Projects</Link>
+          <Link href={"/Contact"} className='transition-all ease-in-out duration-300  hover:pb-1 hover:px-1 hover:text-gray-400' >Contact</Link>
       </nav>
   )
 }
