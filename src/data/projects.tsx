@@ -5,7 +5,7 @@ export const projects = [
       image: "/Workout_Tracker.jpg", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "OpenAI API"],
       links: [
-        { label: "Source", url: "#", iconType: 'github'},
+        { label: "Source", url: "https://github.com/baohuytrinh/ZeroRIR.ai", iconType: 'github'},
         { label: "Website", url: "#", iconType: 'website'}
       ]
     },
@@ -16,7 +16,7 @@ export const projects = [
       image: "/Whiteboard_App.jpg", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "WebSockets"],
       links: [
-        { label: "Source", url: "#", iconType: 'github'},
+        { label: "Source", url: "https://github.com/baohuytrinh/whiteboard", iconType: 'github'},
         { label: "Website", url: "#", iconType: 'websitev'}
       ]
     },
@@ -27,8 +27,8 @@ export const projects = [
       image: "/Port2_App.jpg", 
       tags: ["TypeScript", "React", "Next.js", "TailwindCSS"],
       links: [
-        { label: "Source", url: "#", iconType: 'github'},
-        { label: "Website", url: "#", iconType: 'website'}
+        { label: "Source", url: "https://github.com/baohuytrinh/personal-portfolio", iconType: 'github'},
+        { label: "Website", url: "https://baohuytrinh.vercel.app/", iconType: 'website'}
       ]
     },
 
@@ -38,7 +38,7 @@ export const projects = [
         image: "/LuckyNails_App.jpg", 
         tags: ["HTML", "CSS", "JavaScript", "MongoDB", "Node.js", "Express.js"],
         links: [
-          { label: "Source", url: "#", iconType: 'github'},
+          { label: "Source", url: "https://github.com/baohuytrinh/LuckyNailsWebsite", iconType: 'github'},
           { label: "Website", url: "#", iconType: 'website'}
         ]
       },

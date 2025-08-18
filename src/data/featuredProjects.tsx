@@ -5,7 +5,7 @@ export const featuredProjects = [
       image: "/Workout_Tracker.jpg", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "OpenAI API"],
       links: [
-        { label: "Source", url: "#", iconType: 'github' },
+        { label: "Source", url: "https://github.com/baohuytrinh/ZeroRIR.ai", iconType: 'github' },
         { label: "Website", url: "#", iconType: 'website'}
       ]
     },
@@ -16,7 +16,7 @@ export const featuredProjects = [
       image: "/Whiteboard_App.jpg", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "WebSockets"],
       links: [
-        { label: "Source", url: "#", iconType: 'github' },
+        { label: "Source", url: "https://github.com/baohuytrinh/whiteboard", iconType: 'github' },
         { label: "Website", url: "#", iconType: 'website' }
       ]
     },
