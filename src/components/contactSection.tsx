@@ -145,7 +145,7 @@ export default function ContactSection() {
                   ? 'border-red-500 focus:ring-red-500' 
                   : 'border-gray-600 focus:ring-blue-500 focus:border-blue-500'
               }`}
-              placeholder="your.email@example.com"
+              placeholder="username@example.com"
             />
             {errors.email && (
               <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -180,11 +180,11 @@ export default function ContactSection() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-full py-3 px-6 rounded-lg font-medium transition-all duration-200 ${
+              className={`w-full py-3 px-6 rounded-lg font-medium transition-all duration-300 ${
                 isSubmitting
                   ? 'bg-gray-600 cursor-not-allowed'
-                  : 'bg-blue-600 hover:bg-blue-700 transform hover:scale-105'
-              } text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900`}
+                  : 'bg-gray-800 hover:bg-blue-400 hover:cursor-pointer transform hover:scale-102'
+              } text-white hover:text-gray-800 hover:font-bold focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900`}
             >
               {isSubmitting ? (
                 <span className="flex items-center justify-center">
@@ -204,7 +204,7 @@ export default function ContactSection() {
           {submitStatus === 'success' && (
             <div className="p-4 bg-green-900 border border-green-600 rounded-lg">
               <p className="text-green-300 text-center">
-                ✅ Message sent successfully! I'll get back to you soon.
+                ✅ Message sent successfully! I&apos;ll get back to you soon.
               </p>
             </div>
           )}

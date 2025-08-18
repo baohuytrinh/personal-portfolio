@@ -6,7 +6,7 @@ import { featuredProjects } from '@/data/featuredProjects';
 import Link from 'next/link';
 import SkillsSection from '@/components/skillsSection';
 import FeaturedProjectCard from '@/components/FeaturedProjectCard';
-import { RiH2 } from 'react-icons/ri';
+
 
 
 
@@ -71,18 +71,18 @@ export default function Home() {
           <div className="order-2 md:order-1 mt-5 md:mt-10 text-center md:text-left px-5 md:px-0"> 
 
             <header className=" md:mr-10 text-2xl md:text-4xl py-2 flex justify-center md:justify-center">
-              <h1 className="mr-2 font-bold">Hi, I'm Bao-Huy </h1>
+              <h1 className="mr-2 font-bold">Hi, I&apos;m Bao-Huy </h1>
               <p className="text-gray-300 text-xs flex justify-center items-center">
                 {"(bow💥- hwee)"}
               </p>
             </header>
             
             <h1 className=" text-gray-400 md:text-justify text-start text-md md:text-l top-1 mx-left flex justify-center md:justify-start px-0 md:px-2 py-2 mr-0 md:mr-10">
-            I'm a 3rd-year Computer Science major at UMass Amherst with a minor in Mathematics, aspiring to become a Full-Stack / Software Engineer.
+            I&apos;m a 3rd-year Computer Science major at UMass Amherst with a minor in Mathematics, aspiring to become a Full-Stack / Software Engineer.
             </h1>
 
             <h2 className=" text-gray-400 md:text-justify text-start flex flex-col gap-[32px] row-start-2 justify-start py-2 mr-0 md:mr-10 px-0 md:px-2 text-md">
-            Passionate about building products and solving problems, I’m learning and developing every day through personal projects focused on full-stack development. I'm currently seeking internship opportunities where I can gain more hands-on experience, contribute to real-world projects, and grow alongside experienced engineers.
+            Passionate about building products and solving problems, I&apos;m learning and developing every day through personal projects focused on full-stack development. I&apos;m currently seeking internship opportunities where I can gain more hands-on experience, contribute to real-world projects, and grow alongside experienced engineers.
             </h2>
 
             <h3 className="flex gap-[32px] row-start-2 justify-center mt-0 py-2 text-md font-bold mr-0 md:mr-10">

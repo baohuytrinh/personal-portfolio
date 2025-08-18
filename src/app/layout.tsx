@@ -5,17 +5,6 @@ import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ParticleBackground from "@/components/ParticleBackground";
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const inter = Inter({
    subsets: ['latin'],
     variable: '--font-inter' 
