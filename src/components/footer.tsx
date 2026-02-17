@@ -8,7 +8,7 @@ function Footer() {
       <div className='mx-auto  flex justify-between'>
 
         <h1 className='text-[14px] text-gray-600 flex my-auto'>
-        © 2025 Bao-Huy Trinh
+        © 2026 Bao-Huy Trinh
         </h1>
 
         <div className=' flex gap-3'>
