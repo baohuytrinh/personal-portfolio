@@ -95,7 +95,7 @@ const ExperienceSection: React.FC = () => {
         {/* Experience Entries with Timeline */}
         <div className="border-2 border-white rounded-3xl px-5 relative py-1">
           {/* Vertical Timeline Line */}
-          <div className="absolute left-[44px] top-0 bottom-0 w-0.5 bg-white"></div>
+          <div className="absolute left-[43px] top-0 bottom-0 w-0.5 bg-white"></div>
           
           {currentEntries.map((entry, index) => (
             <div key={index} className="flex gap-4 relative">
