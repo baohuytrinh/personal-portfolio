@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import SkillsSection from '@/components/skillsSection'
+import ExperienceSection from '@/components/ExperienceSection';
 import {FiMapPin, FiLinkedin, FiGithub, FiMail} from "react-icons/fi";
 
 export default function About() {
@@ -11,11 +12,11 @@ export default function About() {
 
             <div className="grid order-1 md:order-2 mt-8 md:mt-10 items-center justify-center flex flex-shrink-0">
               <Image
-                src='/pfp.jpg'
+                src='/pfp2026_3.jpg'
                 alt='my pfp'
                 width={275}
                 height={300}
-                className='rounded-lg border border-gray-500'
+                className='rounded-3xl mt-10'
               />
               <div className='flex px-1 pt-1 justify-between'>
                 <div className="flex items-center gap-1 ">
@@ -65,22 +66,28 @@ export default function About() {
               
             </header>
             
-            <h1 className="text-gray-400 md:text-justify text-start text-md md:text-l top-1 mx-left flex justify-center md:justify-start px-0 md:px-2 py-2 mr-0 md:mr-10">
+            {/* <h1 className="text-gray-400 md:text-justify text-start text-md md:text-l top-1 mx-left flex justify-center md:justify-start px-0 md:px-2 py-2 mr-0 md:mr-10">
             I&apos;m a 3rd-year Computer Science major at UMass Amherst with a minor in Mathematics, aspiring to become a Full-Stack / Software Engineer.
-            </h1>
+            </h1> */}
 
             <h2 className="text-gray-400 md:text-justify text-start flex flex-col gap-[32px] row-start-2 justify-start py-2 mr-0 md:mr-10 px-0 md:px-2 text-md">
-            Passionate about building products and solving problems, I&apos;m learning and developing every day through personal projects focused on full-stack development. I&apos;m currently seeking internship opportunities where I can gain more hands-on experience, contribute to real-world projects, and grow alongside experienced engineers.
+            I&apos;m learning and developing every day through personal projects focused on full-stack development. Through previous internship experiences working a software engineering role, I&apos;ve contributed to real-world projects and honed my technical skills. I&apos;m now seeking new internship opportunities this summer where I can continue gaining hands-on experience and grow alongside experienced engineers.
             </h2>
 
-            <h3 className="flex gap-[32px] row-start-2 justify-center mt-0 py-2 text-md font-bold mr-0 md:mr-10">
+            <h3 className="text-gray-400 md:text-justify text-start flex flex-col gap-[32px] row-start-2 justify-start py-2 mr-0 md:mr-10 px-0 md:px-2 text-md"> Outside of school and work, I enjoy working out, playing volleyball, and reading manga.</h3>
+
+            <h4 className="flex gap-[32px] row-start-2 justify-center mt-0 py-2 text-md font-bold mr-0 md:mr-10">
             Eager to learn, build, and make an impact.
-            </h3>
+            </h4>
             
           </div>
           
         </div>
       </div>
+
+      {/* experience */}
+      <ExperienceSection/>
+
       
       {/* skills */}
       <SkillsSection/>
