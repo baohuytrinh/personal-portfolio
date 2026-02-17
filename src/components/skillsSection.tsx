@@ -2,7 +2,7 @@ import React from "react";
 import SkillCard from "./skills";
 
 import { TbBrandGit } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiPostgresql } from "react-icons/si";
 
 
 import {
@@ -20,9 +20,15 @@ import { BiLogoTypescript,
         BiLogoPython,
         BiLogoMongodb,
         BiLogoDocker,
+        BiLogoSpringBoot,
+        BiLogoPostgresql,
+        BiLogoGraphql,
 } from "react-icons/bi";
 
-type ColorKey = 'yellow' | 'blue' | 'orange' | 'green' | 'cyan' | 'red' | 'teal' | 'slate' | 'java' | 'python' | 'white';
+import { VscAzure } from "react-icons/vsc";
+
+
+type ColorKey = 'yellow' | 'blue' | 'orange' | 'green' | 'cyan' | 'red' | 'teal' | 'slate' | 'java' | 'python' | 'white' | 'navy' | 'pink';
 
 interface Skill {
     name: string;
@@ -44,13 +50,17 @@ const SkillsSection: React.FC = () => {
         { name: 'TailwindCSS', icon: <RiTailwindCssFill/>, color: 'teal'},
         { name: 'HTML5', icon: <RiHtml5Fill/>, color: 'orange'},
         { name: 'CSS', icon: <BiLogoCss3/>, color: 'blue'},
+        { name: 'PostgreSQL', icon: <BiLogoPostgresql />, color: 'navy'},
+        { name: 'Spring Boot', icon: <BiLogoSpringBoot />, color: 'green'},
+        { name: 'Azure', icon: <VscAzure />, color: 'blue'},
+        { name: 'GraphQL', icon: <BiLogoGraphql />, color: 'pink'},
     ];
 
     return (
         <div className="w-full flex justify-center mb-4 px-5 md:px-0">
             <div className="max-w-170 w-full">
                 <h2 className="font-bold flex justify-center md:justify-start max-w-180 text-[30px] pb-2">
-                    skills
+                    Skills
                 </h2>
                 <div className="gap-4 grid grid-cols-3 md:grid-cols-4 w-full">
                     {skills.map((skill, index) => (
