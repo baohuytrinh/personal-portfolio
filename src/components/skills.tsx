@@ -1,7 +1,7 @@
 import React from "react";
 import { brotliDecompress } from "zlib";
 
-type ColorKey = 'yellow' | 'blue' | 'orange' | 'green' | 'cyan' | 'red' | 'teal' | 'slate' | 'java' | 'python' | 'white';
+type ColorKey = 'yellow' | 'blue' | 'orange' | 'green' | 'cyan' | 'red' | 'teal' | 'slate' | 'java' | 'python' | 'white' | 'navy' | 'pink';
 
 interface SkillCardProps {
     icon: React.ReactNode;
