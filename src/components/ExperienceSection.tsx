@@ -68,10 +68,10 @@ const ExperienceSection: React.FC = () => {
         </h2>
         
         {/* Tabs */}
-        <div className="flex gap-2 mb-4 w-full">
+        <div className="flex gap-2 mb-4 w-full ">
           <button
             onClick={() => setActiveTab('work')}
-            className={`flex-1 px-4 py-0.5 rounded-md font-medium transition-colors ${
+            className={`cursor-pointer flex-1 px-4 py-0.5 rounded-md font-medium transition-colors ${
               activeTab === 'work'
                 ? 'bg-white text-gray-900'
                 : 'text-gray-400 hover:text-gray-300 '
@@ -81,7 +81,7 @@ const ExperienceSection: React.FC = () => {
           </button>
           <button
             onClick={() => setActiveTab('studies')}
-            className={`flex-1 px-4 py-0.5 rounded-md font-medium transition-colors ${
+            className={`cursor-pointer flex-1 px-4 py-0.5 rounded-md font-medium transition-colors ${
               activeTab === 'studies'
                 ? 'bg-white text-gray-900'
                 : 'text-gray-400 hover:text-gray-300 '
