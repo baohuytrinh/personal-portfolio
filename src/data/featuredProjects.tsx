@@ -2,11 +2,11 @@ export const featuredProjects = [
     {
       title: "AI-Powered Workout Tracker",
       description: "Log sets/reps/weight, plan workouts on calendar, and get AI-guided suggestions based on workout history. ",
-      image: "/Workout_Tracker.jpg", 
+      image: "/zeroRIR2026_1.png", 
       tags: ["JavaScript", "React", "Node.js", "MongoDB", "Express.js", "Vite", "OpenAI API"],
       links: [
         { label: "Source", url: "https://github.com/baohuytrinh/ZeroRIR.ai", iconType: 'github' },
-        { label: "Website", url: "#", iconType: 'website'}
+        { label: "Website", url: "https://workout-tracker-ye3y.onrender.com", iconType: 'website'}
       ]
     },
 
